@@ -29,13 +29,14 @@ private:
     log_level level;
     void output(string text,log_level act_level);
    
-    Logger(log_target target, log_level level, string path);
-    Logger(); 
+   
+    
     static Logger* instance;
 
 public:
-    static Logger* getInstance();
- 
+    Logger(log_target target, log_level level, string path);
+    static Logger *getInstance();
+    Logger();
     Logger(const Logger &);
     void debug(string text);
     void info(string text);

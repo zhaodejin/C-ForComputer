@@ -198,8 +198,9 @@ static int schedule()
     int i;
     int mode;
     int frameNum = -1;
+    logger.info("rewrewrrewrewewrwe");
     srand((unsigned)time(NULL));
-    //qDebuglogger.info(to_string(frameNum));
+   
     createInsruction(0, TATOLNUM);
     printf("The semgment and the page:\n");
     for (i = 1; i < TATOLNUM; i++)

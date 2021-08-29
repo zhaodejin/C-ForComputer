@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/c++ForComputer.dir/src/utils/logger.cpp.o"
+  "CMakeFiles/c++ForComputer.dir/src/utils/logger.cpp.o.d"
   "CMakeFiles/c++ForComputer.dir/src/utils/main.cpp.o"
+  "CMakeFiles/c++ForComputer.dir/src/utils/main.cpp.o.d"
   "CMakeFiles/c++ForComputer.dir/src/utils/utils.cpp.o"
+  "CMakeFiles/c++ForComputer.dir/src/utils/utils.cpp.o.d"
   "c++ForComputer"
   "c++ForComputer.pdb"
 )

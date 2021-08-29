@@ -1,3 +1,3 @@
-/Users/zhaodejin/Documents/Workspace/c++ForComputer/CMakeFiles/rebuild_cache.dir
-/Users/zhaodejin/Documents/Workspace/c++ForComputer/CMakeFiles/edit_cache.dir
-/Users/zhaodejin/Documents/Workspace/c++ForComputer/CMakeFiles/c++ForComputer.dir
+/Users/zhaodejin/Documents/Workspace/c-ForComputer/CMakeFiles/rebuild_cache.dir
+/Users/zhaodejin/Documents/Workspace/c-ForComputer/CMakeFiles/edit_cache.dir
+/Users/zhaodejin/Documents/Workspace/c-ForComputer/CMakeFiles/c++ForComputer.dir

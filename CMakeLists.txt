@@ -12,6 +12,6 @@ add_executable(${PROJECT_NAME} src/utils/utils.cpp src/utils/main.cpp include/ut
         include/DataStruct/Array.h include/DataStruct/RBTree.h include/Networks/boostHttp.h
         include/Networks/boostUDPServer.h include/DataStruct/LinkList.h
         include/os/pool.h src/utils/logger.cpp include/utils/logger.h
-        include/os/pageSchedule.h
+        include/os/pageSchedule.h include/utils/config.h
         )
 target_link_libraries(${PROJECT_NAME} m)

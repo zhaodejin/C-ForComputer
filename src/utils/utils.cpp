@@ -17,7 +17,7 @@
 using namespace std;
 using namespace boost::asio;
 
-Logger logger = initLogger();
+Logger logger(Logger::file_and_terminal, Logger::DEBUG,"result.log");
 Logger &initLogger() {
     Logger *logger = Logger::getInstance();
     return *logger;
@@ -148,6 +148,7 @@ void dataStructMenu() {
             break;
         case BRTREE:
             remainder("红黑树");
+
             break;
         case BSTREE:
             remainder("二叉搜索树");

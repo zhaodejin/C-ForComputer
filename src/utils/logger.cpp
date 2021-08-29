@@ -11,12 +11,22 @@ string currTime()
 Logger::Logger(){
     this->target = file_and_terminal;
     this->level = DEBUG;
-    this->path = "result.log";
-    cout<<currTime()<<"[WELCOME]"<<__FILE__<<" "<<"=== Start Logging ==="<<endl;
+    cout<<currTime()<<"[WELCOME]"<<" "<<"=== Start Logging ==="<<endl;
+    string tmp = "";
+    string welcome_dialog = tmp + "[WELCOME]" + ": " + currTime() + ":" + "=== Start Logging ===\n";
+    if (target != terminal)
+    {
+        this->outfile.open(path);
+        this->outfile << welcome_dialog;
+        this->outfile.flush();
+    }
 }
-Logger* Logger::instance = new Logger(Logger::file_and_terminal,Logger::DEBUG,"result.log");
-Logger* Logger::getInstance()
-{ return instance; }
+Logger* Logger::instance = new Logger();
+Logger *Logger::getInstance()
+{ 
+    return instance; 
+}
+    
 Logger::Logger(log_target target, log_level level, string path)
 {
     this->target = target;
@@ -26,12 +36,10 @@ Logger::Logger(log_target target, log_level level, string path)
     string welcome_dialog = tmp +"[WELCOME]"+": "+currTime()+":"+"=== Start Logging ===\n";
     if(target != terminal)
     {
-        this->outfile.open(path,ios::out|ios::app);
+        this->outfile.open(path);
         this->outfile<<welcome_dialog;
-    }
-    else if(target!=file)
-    { 
-        cout<<welcome_dialog;
+
+
     }
 }
 void Logger::output(string text,log_level act_level)
@@ -47,12 +55,12 @@ void Logger::output(string text,log_level act_level)
     string output_content=prefix+currTime()+":"+text+"\n";
     if((this->level>=DEBUG)&&(this->target!=terminal))
     {
+    
         cout<<output_content;
-        
-    }
-    if(this->target!=terminal)
         outfile<<output_content;
         outfile.flush();
+    }
+        
 
 
 }

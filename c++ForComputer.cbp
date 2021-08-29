@@ -93,6 +93,9 @@
 		<Unit filename="/Users/zhaodejin/Documents/Workspace/c++ForComputer/include/os/pool.h">
 			<Option target="c++ForComputer"/>
 		</Unit>
+		<Unit filename="/Users/zhaodejin/Documents/Workspace/c++ForComputer/include/utils/config.h">
+			<Option target="c++ForComputer"/>
+		</Unit>
 		<Unit filename="/Users/zhaodejin/Documents/Workspace/c++ForComputer/include/utils/logger.h">
 			<Option target="c++ForComputer"/>
 		</Unit>

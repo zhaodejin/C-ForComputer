@@ -30,7 +30,9 @@
 #include <vector>
 #include <boost/system/error_code.hpp>
 #include "utils/logger.h"
-#include "os/pageSchedule.h"  
+#include "utils/config.h"
+#include "os/pageSchedule.h" 
+
 //extern Logger *logger;
 //extern Logger *logger;
 Logger &initLogger();
@@ -56,7 +58,7 @@ enum Network{
 };
 
 enum operationSystem{
-    THREAD = 0,
+    THREAD = 1,
     MEMORYMANAGER,
     FILEMANAGER,
     PROCESSTABLE,
